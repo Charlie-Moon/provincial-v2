@@ -1,8 +1,9 @@
-$font-body: "Open Sans", "Metal", sans-serif;
+$font-body: "Open Sans", "Battambang", sans-serif;
 $font-family-sans-serif: $font-body;
-$blue: #254187;
+$blue: #0956AE;;
 $gray-default: #F5F6FA;
 $color-red: #f00;
+
 $enable-responsive-font-sizes: true;
 $spacer: 15px;
 $grid-gutter-width: 20px;
@@ -10,7 +11,7 @@ $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1088px
+    xl: 1200px
 ) !default;
 
 $aspectratios: (

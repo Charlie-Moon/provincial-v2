@@ -1,9 +1,25 @@
 .header {
     .title {
         text-align: center;
+        color: $blue;
 
         .site-title {
             font-family: 'Moul', Open Sans;
+            margin-top: 10px;
+        }
+        a {
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            margin-top: 15px;
+            border-bottom: 30px solid $blue;
+            padding: 1rem 0;
+            column-count: 4;
+            column-gap: 60px;
+            column-rule: 1px solid #707070;
+            .dropdown-item {
+                margin-bottom: 5px;
+            }
         }
     }
     ul.language {
