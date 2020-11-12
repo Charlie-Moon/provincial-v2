@@ -1,14 +1,13 @@
 {
-  "name": "cnphtml",
+  "name": "provincial-V2",
   "version": "0.0.1",
-  "description": "Cambodia National Portal is your guide to finding informations and government services.",
+  "description": "",
   "scripts": {
     "build": "webpack --mode=development --config webpack.config.js",
     "build:production": "webpack --mode=production --config webpack.config.js",
     "start": "webpack --mode=development --watch --config webpack.config.js"
   },
-  "author": "sokmean-mptc <ngonsokmean@mptc.gov.kh>",
-  "homepage": "https://www.sokmean.com",
+  "author": "Thaily CHAN <thaily-chan@mptc.gov.kh>",
   "licenses": [
     {
       "type": "MIT",
