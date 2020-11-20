@@ -22,7 +22,9 @@ import feedback from './feedback';
 //import slick_main_slideshow from './autoload/slick_main_slideshow';
 
 $(document).ready( () => {
-    $('.slick-slideshow').slick()
+    $('.slick-slideshow').slick();
+    $('.slide-event').slick();
+    $('.slide-news').slick();
 })
 
 

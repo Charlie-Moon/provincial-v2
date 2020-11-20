@@ -1,0 +1,9 @@
+@import "mixin";
+.block-province {
+    @include space-block;
+    .province-banner {
+        a {
+            color: $grey-600;
+        }
+    }
+}

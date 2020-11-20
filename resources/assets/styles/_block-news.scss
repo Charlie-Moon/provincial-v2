@@ -1,0 +1,106 @@
+@import "mixin";
+.block-news {
+    background-color: #F6F6F6;
+    padding: 40px 0;
+    @include space-block;
+    .link-event {
+        display: flex;
+        margin-bottom: 20px;
+        a {
+            color: $grey-700;
+        }
+        .publish-date {
+            color: $grey-600;
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    .slide-event, .slide-news {
+        padding-bottom: 60px;
+    }
+    .slide-news {
+        .b-item {
+            margin-bottom: 28px;
+            display: flex;
+            a {
+                color: $grey-700;
+            }
+            .b-date-wrap {
+                margin-right: 15px;
+                .b-date {
+                    background-color: $grey-700;
+                    color: #fff;
+                    text-align: center;
+                    width: 75px;
+                    height: 90px;
+                    padding: 10px;
+                    .day {
+                        font-size: 25px;
+                        line-height: 35px;
+                    }
+                    .month {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    .year {
+                        font-size: 10px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+
+        background: #fff;
+        appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        padding: 10px;
+        font-size: 0;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        z-index: 2;
+
+        &:before {
+
+            color: $grey-700;
+            display: block;
+            font-size: 35px;
+            font-family: IcoFont!important;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+    }
+    .slick-prev {
+        right: 10%;
+        @include media-breakpoint-down(md) {
+            right: 15%;
+        }
+
+        &::before {
+            content: '\ea74';
+        }
+        
+    }
+    .slick-next {
+        right: 1%;
+
+        &::before {
+            content: '\ea75';
+        }
+    }
+}

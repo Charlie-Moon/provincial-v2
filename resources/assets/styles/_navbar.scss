@@ -1,16 +1,12 @@
 .navbar {
     /*language*/
-    ul.language {
+    .social {
+        padding: 18px 0px;
         li {
+            margin-right: 15px;
+            font-size: 15px;
             a {
-                font-size: 10px;
-                color: #29293A;
-                display: inline-grid;
-                img {
-                    height: 19px;
-                    display: block;
-                    margin-bottom: 3px;
-                }
+                font-size: 15px;
             }
         }
     }
@@ -55,10 +51,33 @@
         padding: 0px; 
         li { 
             list-style: none; 
-            position: relative; 
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
+            &:hover ul {
+                display: block;
+            }
             a { 
                 display: block; 
-                text-decoration: none; 
+                text-decoration: none;
+                border-bottom: 2px solid transparent;
+                &.dropdown-toggle::after {
+                    font-family: 'IcoFont' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    direction: ltr;
+                    line-height: 1;
+                    -webkit-font-feature-settings: "liga";
+                    -webkit-font-smoothing: antialiased;
+                    content: '\ea99';
+                    border: none;
+                    vertical-align: unset;
+                }
             }
             ul {
                 margin: 0px;
@@ -66,7 +85,9 @@
                 position: absolute; 
                 left: 100%; 
                 top: 0px; 
-                z-index: 1; 
+                z-index: 1;
+                display: none;
+                transition: all 0.3 ease-in;
                 li.menu-item-has-children {
                     > a::after { 
                         border-color: transparent; 
@@ -149,6 +170,48 @@
                     border-width: 5px 5px 2.5px 5px;
                     margin-left: 10px;
                 }
+            }
+        }
+        .social {
+            padding: 15px;
+            list-style: none;
+            li {
+                margin-right: 10px;
+                font-size: 14px;
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .social {
+        padding: 18px 0px;
+        li {
+            margin-right: 15px;
+            font-size: 15px;
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+    ul.menu {
+        li {
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .social {
+        padding: 18px 0px;
+        li {
+            margin-right: 15px;
+            font-size: 15px;
+            a {
+                font-size: 15px;
             }
         }
     }

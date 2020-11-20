@@ -3,5 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 .container-fluid {
-    max-width: 1255px;
+    max-width: 1440px;
+}
+body.km {
+    line-height: 1.8 !important;
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        line-height: 1.8;
+    }
 }

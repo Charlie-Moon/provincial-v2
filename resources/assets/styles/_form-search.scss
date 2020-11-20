@@ -53,6 +53,7 @@
             .submit-field {
                 padding-left: 15px;
                 padding-right: 15px;
+                border: none;
             }
         }
         ul {
@@ -92,6 +93,7 @@
             }
             .submit-field {
                 padding-left: 15px;
+                border: none;
                 padding-right: 15px;
             }
         }
@@ -126,13 +128,17 @@
         margin-bottom: 30px;
         .input-field {
             padding: 20px;
+            border-radius: 20px;
             .text-field {
-                height: 55px;
+                height: 41px;
+                border-radius: 20px 0 0 20px;
             }
             .submit-field {
                 padding-left: 20px;
                 padding-right: 20px;
                 font-size: 18px;
+                border: none;
+                border-radius: 0 20px 20px 0;
             }
         }
         ul {

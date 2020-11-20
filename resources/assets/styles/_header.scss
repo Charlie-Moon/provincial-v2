@@ -1,12 +1,11 @@
 .header {
     .title {
         text-align: center;
-        color: $blue;
+        // color: $blue;
 
-        .site-title {
-            font-family: 'Moul', Open Sans;
-            margin-top: 10px;
-        }
+        // .site-title {
+        //     font-family: 'Moul', Open Sans;
+        // }
         a {
             cursor: pointer;
         }
@@ -14,9 +13,12 @@
             margin-top: 15px;
             border-bottom: 30px solid $blue;
             padding: 1rem 0;
-            column-count: 4;
-            column-gap: 60px;
-            column-rule: 1px solid #707070;
+            box-shadow: 0 5px 6px rgba($color: #000000, $alpha: .4);
+            @include media-breakpoint-up(lg) {
+                column-count: 4;
+                column-gap: 60px;
+                column-rule: 1px solid #707070;
+            }
             .dropdown-item {
                 margin-bottom: 5px;
             }
@@ -36,6 +38,38 @@
             }
         }
     }
+    .social {
+        margin: 0;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                img {
+                    fill: #0956AE;
+                }
+            }
+        }
+        li:last-child {
+            margin: 0px;
+        }
+    }
+    .dropdown-toggle::after {
+        font-family: 'IcoFont' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        line-height: 1;
+        -webkit-font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
+        content: '\ea99';
+        border: none;
+        vertical-align: unset;
+    }
 }
 
 @include media-breakpoint-down(sm) { 
@@ -51,6 +85,19 @@
             .tagline {
                 font-size: 12px;
                 margin-bottom: 5px;
+            }
+        }
+        .nav-button {
+            padding: 35px;
+        }
+    }
+    .social {
+        padding: 15px 0px;
+        li {
+            margin-right: 10px;
+            font-size: 14px;
+            a {
+                font-size: 15px;
             }
         }
     }
@@ -70,6 +117,16 @@
                 margin-bottom: 5px;
             }
         }
+        .social {
+            padding: 18px 0px;
+            li {
+                margin-right: 15px;
+                font-size: 15px;
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
 @include media-breakpoint-up(lg) { 
@@ -83,8 +140,18 @@
                 margin-bottom: 5px;
             }
             .tagline {
-                font-size: 20px;
+                font-size: 15px;
                 margin-bottom: 5px;
+            }
+        }
+        .social {
+            padding: 18px 0px;
+            li {
+                margin-right: 15px;
+                font-size: 15px;
+                a {
+                    font-size: 15px;
+                }
             }
         }
     }

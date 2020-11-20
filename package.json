@@ -1,5 +1,5 @@
 {
-  "name": "provincial-v2",
+  "name": "provincial-V2",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -8,6 +8,7 @@
     "start": "webpack --mode=development --watch --config webpack.config.js"
   },
   "author": "Thaily CHAN <thaily-chan@mptc.gov.kh>",
+  "homepage": "",
   "licenses": [
     {
       "type": "MIT",

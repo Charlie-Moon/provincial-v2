@@ -27,8 +27,10 @@ html[lang=km] {
             border-bottom: initial;
         }
         .list-group-item.head {
-            font-weight: bold;
-            color: $color-red;
+            background-color: #ffffff;
+            border-left: 5px solid $color-red;
+            border-bottom: 0px;
+            padding-left: 25px;
         }
     }
     .list-group.sticky {
@@ -41,11 +43,13 @@ html[lang=km] {
             > * {
                 color: $color-red;
                 font-weight: bold;
+                line-height: 1.8;
             }
         }
         .list-title.sub {
             > * {
                 color: $blue;
+                line-height: 1.8;
             }
         }
         ul, ol, dl {
@@ -96,9 +100,6 @@ html[lang=km] {
                     color: $blue;
                     font-weight: bold;
                     margin-bottom: 15px;
-                }
-                .contact-body {
-    
                 }
             }
         }

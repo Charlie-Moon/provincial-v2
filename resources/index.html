@@ -8,14 +8,15 @@
     <link rel='stylesheet' href='../dist/main.css' type='text/css' media='all' />
     <title>The Kingdom of Cambodia</title>
 </head>
-<body class="wordpress-class" id="body">
+<body class="wordpress-class km" id="body">
     <header class="container d-lg-flex justify-content-between header">
         <figure class="d-flex m-0">
             <a class="mr-3" href="./index.html">
                 <picture>
-                    <source media="(min-width: 992px)" srcset="./assets/images/logo@2x.png" type="image/jpeg">
-                    <source media="(max-width: 767px)" srcset="./assets/images/logo.png 1x, ./assets/images/logo@2x.png 2x" type="image/jpeg">
-                    <img class="d-md-none1" src="./assets/images/logo.png" type="image/jpeg">
+                    <source media="(min-width: 992px)" srcset="./assets/images/logo@3x.png" type="image/jpeg">
+                    <source media="(min-width: 768x)" srcset="./assets/images/logo@2x.png" type="image/jpeg">
+                    <source media="(max-width: 767px)" srcset="./assets/images/logo.png 1x, ./assets/images/logo@4x.png 2x" type="image/jpeg">
+                    <img src="./assets/images/logo.png" type="image/jpeg">
                 </picture>
             </a>
             <figcaption class="title">
@@ -23,7 +24,7 @@
                 <div class="dropdown text-left">
                     <a id="my-dropdown" class="tagline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">រដ្ឋបាលខេត្តផ្សេងទៀត</a>
                     <div class="dropdown-menu" aria-labelledby="my-dropdown">
-                        <a class="dropdown-item active" href="#">រដ្ឋបាលខេត្តស្ទឹងត្រែង</a>
+                        <a class="dropdown-item" href="#">រដ្ឋបាលខេត្តស្ទឹងត្រែង</a>
                         <a class="dropdown-item" href="#">រដ្ឋបាលខេត្តសៀមរាប</a>
                         <a class="dropdown-item" href="#">រដ្ឋបាលខេត្តព្រះសីហនុ</a>
                         <a class="dropdown-item" href="#">រដ្ឋបាលខេត្តបាត់ដំបង</a>
@@ -51,34 +52,38 @@
                     </div>
                 </div>
             </figcaption>
+            <nav class="navbar ml-auto">
+                <button class="my-2 navbar-toggler navbar-toggler-right text-white nav-icon collapsed" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div></div>
+                </button>
+            </nav>
         </figure>
-        <ul class="my-auto text-center list-inline d-none d-lg-block language">
-            <li class="list-inline-item">
-                <a href="#">
-                    <img srcset="./assets/images/kh@2x.jpg 2x" src="./assets/images/kh.jpg" />
-                    <span>KH</span>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <img srcset="./assets/images/en@2x.jpg 2x" src="./assets/images/en.jpg" />
-                    <span>EN</span>
-                </a>
-            </li>
-        </ul>
+        <div class="d-none d-lg-block">
+
+            <ul class="d-flex justify-content-center align-items-center social">
+                <li>
+                    <a href="#"><img src="assets/images/facebook.svg" height="30px"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/images/youtube.svg" height="30px"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/images/telegram.svg" height="30px"></a>
+                </li>
+            </ul>
+        </div>
     </header>
     <style type="text/css">
     /*Extra small devices (portrait phones, less than 576px)*/
     @media (max-width: 767.98px) {
-        .header { padding-top: 5px; padding-bottom: 5px; }
-        .header .title { text-align: center; margin-top: 6px; }
+        .header { padding-top: 5px; padding-bottom: 15px; }
         .header .title .site-title { font-size: 18px; margin-bottom: 5px; }
         .header .title .tagline { font-size: 12px; margin-bottom: 5px; }
     }
 
     /*Medium devices (tablets, 768px and up)*/
     @media (min-width: 768px) and (max-width: 991.98px) {
-        .header { padding-top: 10px; padding-bottom: 10px; }
+        .header { padding-top: 10px; padding-bottom: 20px; }
         .header .title { text-align: center; margin-top: 10px; }
         .header .title .site-title { font-size: 28px; margin-bottom: 5px; }
         .header .title .tagline { font-size: 18px; margin-bottom: 5px; }
@@ -86,60 +91,48 @@
 
     /*Large devices (desktops, 992px and up)*/
     @media (min-width: 992px) {
-        .header { padding-top: 15px; padding-bottom: 15px; }
+        .header { padding-top: 15px; padding-bottom: 40px; }
         .header .title { text-align: center; margin-top: 20px; }
         .header .title .site-title { font-size: 32px; margin-bottom: 5px; }
-        .header .title .tagline { font-size: 20px; margin-bottom: 5px; }
+        /* .header .title .tagline { font-size: 20px; margin-bottom: 5px; } */
     }
 
     </style>
     <nav class="navbar navbar-expand-lg navbar-light p-0">
         <div class="container">
-            
-            <ul class="text-center list-inline navbar-brand my-auto ml-3 d-lg-none language">
-                <li class="list-inline-item">
-                    <a href="#">
-                        <img height="19px" src="./assets/images/kh.jpg" />
-                        <span>KH</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">
-                        <img height="19px" src="./assets/images/en.jpg" />
-                        <span>EN</span>
-                    </a>
-                </li>
-            </ul>
-            <button class="mr-3 my-2 navbar-toggler navbar-toggler-right text-white nav-icon collapsed" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div></div>
-            </button>
             <div class="collapse navbar-collapse" id="main-menu">
                 <ul class="menu">
-                    <li class="menu-item current-menu-item"><a href="index.html" aria-current="page"><i class="icofont-home"></i></a></li>
-                    <li class="menu-item"><a class="dropdown-toggle" href="cityzen.html">អំពីស្ថាប័ន</a></li>
-                    <li class="menu-item"><a href="business.html">សេវាសាធារណៈ</a></li>
-                    <li class="menu-item "><a href="foreigner.html">ព្រឹត្តិការណ៍ព័ត៌មាន</a></li>
-                    <li class="menu-item"><a href="visitor.html">លិខិតបទដ្ឋានគតិយុត្ត</a></li>
-                    <li class="menu-item"><a href="our-kingdom.html">តំបន់ទេសចរណ៍</a></li>
-                    <li class="menu-item"><a href="our-kingdom.html">​សក្តានុពលវិនិយោគ</a></li>
+                    <li class="menu-item current-menu-item"><a href="index.html" aria-current="page">ទំព័រដើម</a></li>
+                    <li class="menu-item"><a class="dropdown-toggle" href="cityzen.html">អំពីស្ថាប័ន</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="">អំពីស្ថាប័ន</a></li>
+                            <li class="menu-item"><a href="">អំពីស្ថាប័ន</a></li>
+                            <li class="menu-item"><a href="">អំពីស្ថាប័ន</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="business.html">សេវារដ្ឋបាល</a></li>
+                    <li class="menu-item "><a href="foreigner.html">ព័ត៌មានថ្មីៗ</a></li>
+                    <li class="menu-item"><a href="visitor.html">ព្រឹត្តិការណ៍</a></li>
+                    <li class="menu-item"><a href="our-kingdom.html">លិខិតបទដ្ឋានគតិយុត្តិ</a></li>
+                    <li class="menu-item"><a href="our-kingdom.html">​តំបន់ទេសចរណ៍</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <style type="text/css">
     /* custom theme options default for navbar */
-    .navbar { background-color: #f8f9fa; }
+    /* .navbar { background-color: #f8f9fa; } */
     .navbar .navbar-toggler { background-color: #0956AE;; }
     /*desktop screen*/
     @media (min-width: 992px) {
         /*level 1*/
-        .navbar ul.menu > li > a { margin-right:15px; color: #343a40; font-size: 18px; padding-top: 15px; padding-bottom: 15px; padding-left: 20px; padding-right: 20px; }
+        .navbar ul.menu > li > a { margin-right:15px; color: #555; font-size: 18px; padding-top: 15px; padding-bottom: 15px; }
         /*level 1 on hover*/
-        .navbar ul.menu > li > a:hover { color: #343a40; background-color: rgba(0, 0, 0, 0.1); }
+        .navbar ul.menu > li > a:hover { color: #000; border-bottom: 2px solid #0956AE; }
         /*level 1 on active*/
         .navbar ul.menu > li.current-menu-item > a,
         .navbar ul.menu > li.current-post-ancestor > a,
-        .navbar ul.menu > li.current-menu-ancestor > a { background-color: #0956AE;; color: #fff; }
+        .navbar ul.menu > li.current-menu-ancestor > a { border-bottom: 2px solid #0956AE;; color: #000; }
         /*level 1 dropdown arrow color*/
         .navbar ul.menu > li.menu-item-has-children > a::after { border-top-color: rgba(0, 0, 0, 0.1); }
         /*level 1 dropdown arrow color on active*/
@@ -149,7 +142,7 @@
         
         /*nex level*/
         .navbar ul.menu li ul { background-color: #F5F6FA; min-width: 220px; }
-        .navbar ul.menu li ul li a { color: #343a40; font-size: 17px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; }
+        .navbar ul.menu li ul li a { color: #343a40; font-size: 17px; padding-top: 10px; padding-bottom: 10px;}
         /*next level on active */
         .navbar ul.menu li ul li.current-menu-item > a,
         .navbar ul.menu li ul li.current-menu-ancestor > a,
@@ -163,9 +156,17 @@
         .navbar ul.menu li ul li.menu-item-has-children.current-post-ancestor > a::after { border-left-color: rgba(0, 0, 0, 0.1); }
     }
     /* medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .navbar ul.menu > li > a {
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    /* medium devices (tablets, 768px and up) */
     @media (min-width: 0px) and (max-width: 991.98px) {
         /*level 1*/
-        .navbar ul.menu > li > a { color: #343a40; font-size: 16px; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; }
+        .navbar ul.menu > li > a { color: #343a40; font-size: 16px; padding-top: 10px; padding-bottom: 10px; }
         /*level 1 on active*/
         .navbar ul.menu li.current-menu-item > a,
         .navbar ul.menu li.current-post-ancestor > a,
@@ -193,720 +194,590 @@
         .navbar ul.menu li ul li.menu-item-has-children.current-post-ancestor > a::after { border-top-color: rgba(0, 0, 0, 0.1); }
     }
     </style>
-    
-    <section class="main-slideshow slick-slideshow" data-slick='{"adaptiveHeight": false, "mobileFirst": true, "pauseOnDotsHover": true, "dots": false, "autoplay": true, "autoplaySpeed": 3000, "arrows": true, "cssEase": "ease-in-out"}'>
+    <div style="height: 30px;" class="d-none d-md-block"></div>
+    <div class="container-fluid">
+        <section class="main-slideshow slick-slideshow" data-slick='{"adaptiveHeight": false, "mobileFirst": true, "pauseOnDotsHover": true, "dots": true, "autoplay": true, "autoplaySpeed": 3000, "arrows": true, "cssEase": "ease-in-out"}'>
        
-        <figure data-id="slide-01">
-            <img class="d-none" width="100%" src="./assets/images/content/slide-01.jpg" />
-            <div class="aspectratio-md-21-9 aspectratio-16-9">
-                <div class="img" style="background-image: url(./assets/images/content/slide-01.jpg);"></div>
-            </div>
-            <figcaption>
-               <a href="#">
-                   Cambodia National Portal is your guide to finding and using government services.
-               </a>
-            </figcaption>
-        </figure>
+            <figure data-id="slide-01">
+                <img class="d-none" width="100%" src="./assets/images/content/slide-01.jpg" />
+                <div class="aspectratio-16-9 aspect-cover">
+                    <div class="img" style="background-image: url(./assets/images/content/slide-01.jpg);"></div>
+                </div>
+                <figcaption>
+                    <div class="caption-detail">
+                        <div class="tag"><a href="">ពិធីបុណ្យទក្ខិណានុប្បទាន</a><a href="">សម្តេចភក្តី សាយ ឈុំ</a></div>
+                        <a href="#">
+                        ក្នុងនាមក្រុមប្រឹក្សាគណៈអភិបាលខេត្តមន្រ្តីរាជការកងកម្លាំងប្រដាប់អាវុធគ្រប់លំដាប់ថ្នាក់និងប្រជាពលរដ្ឋទូទាំងខេត្តសៀមរាបសូមគោរពថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅបំផុត
+                        </a>
+                        <div class="publish">
+                            <i class="icofont-clock-time"></i> ១ ម៉ោងមុន &nbsp; <i class="icofont-user-alt-7"></i> <a href="">ដោយ អ្នកនិពន្ធ</a>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        
+             <figure data-id="slide-02">
+                <img class="d-none" width="100%" src="./assets/images/content/slide-02.jpg" />
+                <div class="aspectratio-16-9 aspect-cover">
+                    <div class="img" style="background-image: url(./assets/images/content/slide-02.jpg);"></div>
+                </div>
+                <figcaption>
+                    <div class="caption-detail">
+                        <div class="tag"><a href="">ពិធីបុណ្យទក្ខិណានុប្បទាន</a><a href="">សម្តេចភក្តី សាយ ឈុំ</a></div>
+                        <a href="#">
+                            ក្នុងនាមក្រុមប្រឹក្សាគណៈអភិបាលខេត្តមន្រ្តីរាជការកងកម្លាំងប្រដាប់អាវុធគ្រប់លំដាប់ថ្នាក់និងប្រជាពលរដ្ឋទូទាំងខេត្តសៀមរាបសូមគោរពថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅបំផុត
+                        </a>
+                        <div class="publish">
+                            <i class="icofont-clock-time"></i> ១ ម៉ោងមុន &nbsp; <i class="icofont-user-alt-7"></i> <a href="">ដោយ អ្នកនិពន្ធ</a>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
     
-        <figure data-id="slide-02">
-            <img class="d-none" width="100%" src="./assets/images/content/slide-02.jpg" />
-            <div class="aspectratio-md-21-9 aspectratio-16-9">
-                <div class="img" style="background-image: url(./assets/images/content/slide-02.jpg);"></div>
-            </div>
-            <figcaption>
-                <a href="#">
-                    To provide useful information and services for citizen.  
-                </a>
-            </figcaption>
-        </figure>
+            <figure data-id="slide-03">
+                <img class="d-none" width="100%" src="./assets/images/content/slide-03.jpg" />
+                <div class="aspectratio-16-9 aspect-cover">
+                    <div class="img" style="background-image: url(./assets/images/content/slide-03.jpg);"></div>
+                </div>
+                <figcaption>
+                    <div class="caption-detail">
+                        <div class="tag"><a href="">ពិធីបុណ្យទក្ខិណានុប្បទាន</a><a href="">សម្តេចភក្តី សាយ ឈុំ</a></div>
+                        <a href="#">
+                         ក្នុងនាមក្រុមប្រឹក្សាគណៈអភិបាលខេត្តមន្រ្តីរាជការកងកម្លាំងប្រដាប់អាវុធគ្រប់លំដាប់ថ្នាក់និងប្រជាពលរដ្ឋទូទាំងខេត្តសៀមរាបសូមគោរពថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅបំផុត
+                        </a>
+                        <div class="publish">
+                         <i class="icofont-clock-time"></i> ១ ម៉ោងមុន &nbsp; <i class="icofont-user-alt-7"></i> <a href="">ដោយ អ្នកនិពន្ធ</a>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+           
+        </section>
 
-        <figure data-id="slide-03">
-            <img class="d-none" width="100%" src="./assets/images/content/slide-03.jpg" />
-            <div class="aspectratio-md-21-9 aspectratio-16-9">
-                <div class="img" style="background-image: url(./assets/images/content/slide-03.jpg);"></div>
-            </div>
-            <figcaption>
-                <a href="#">
-                    Providing useful information, services and experiences for visitors.  
-                </a>
-            </figcaption>
-        </figure>
-       
-    </section>
-    <style type="text/css">
-    /*Extra small devices (portrait phones, less than 576px)*/
-    @media (max-width: 767.98px) {
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-01] figcaption a { width: 55%; padding: 10px 20px; line-height: 20px; font-size: 13px; }
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-02] figcaption a { width: 55%; padding: 10px 20px; line-height: 20px; font-size: 13px; }
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-03] figcaption a { width: 55%; padding: 10px 20px; line-height: 20px; font-size: 13px; }
-    }
-    
-    /*Medium devices (tablets, 768px and up)*/
-    @media (min-width: 768px) and (max-width: 991.98px) {
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-01] figcaption a { width: 40%; padding: 30px; line-height: 29px; font-size: 18px; }
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-02] figcaption a { width: 40%; padding: 30px; line-height: 29px; font-size: 18px; }
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-03] figcaption a { width: 40%; padding: 30px; line-height: 29px; font-size: 18px; }
-    }
-    
-    /*Large devices (desktops, 992px and up)*/
-    @media (min-width: 992px) {
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-01] figcaption a { width: 27%; padding: 50px; line-height: 45px; font-size: 22px; }
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-02] figcaption a { width: 27%; padding: 30px; line-height: 45px; font-size: 22px; }
-        .main-slideshow .slick-list .slick-track figure[data-id=slide-03] figcaption a { width: 27%; padding: 30px; line-height: 45px; font-size: 22px; }
-    }
+
+
+    </div>
+        
+    </div>
+    <style>
+    /* custom theme options default for slideshow */
+    .main-slideshow .slick-list .slick-track figure figcaption, .submit-field, .banner-province { background: rgb(1,87,155);
+        background: linear-gradient(200deg, rgb(51,122,176) 0%, rgb(51,145,201) 100%); color: #fff; }
     </style>
-    <!-- SEARCH AREA -->
-    <section class="container">
-        <div class="form-search">
-            <form action="search.html" method="POST">
-                <div class="input-field input-group">
-                    <input type="search" class="text-field form-control" placeholder="Search All Government" />
-                    <div class="input-group-append">
-                        <button type="submit" class="submit-field btn btn-primary"><span class="d-none d-md-inline">Search</span> <i class="icofont-search"></i></button>
-                    </div>
-                </div>
-            </form>
-            <ul>
-                <li>
-                    <label>Popular Keywords:</label>
-                    <ul>
-                        <li><a href="service-detail.html">driver's license</a></li>
-                        <li><a href="service-detail.html">free health service</a></li>
-                        <li><a href="service-detail.html">birth registration</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
+
     <main>
-        <header class="block-heading text-center">
-            <h4>
-                <a class="text-danger" href="service-list.html">
-                    POPULAR SERVICES
-                </a>
-            </h4>
-        </header>
-        <!-- POPULAR SERVICES -->
-        <div class="container-fluid px-0 px-md-3">
-            <!-- POPULAR SERVICES FOR DESKTOP -->
-            <div class="lg block-flex-tab d-lg-block d-none">
-                <ul class="d-flex">
-                    <li class="flex-fill">
-                        <h5><i class="icofont-users-alt-3"></i>Citizen</h5>
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Register to vote </a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Claim your property</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Locate your tax refund</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex-fill">
-                        <h5><i class="icofont-briefcase-2"></i>Business</h5>
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Start your business</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Obtain your license</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Online Service </a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex-fill">
-                        <h5><i class="icofont-travelling"></i>Foreigner</h5>
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">New to Cambodia</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Working in Cambodia</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Providing a Feedback</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex-fill">
-                       <h5><i class="icofont-camera-alt"></i>Visitor</h5>
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Things to do in Cambodia</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Plan your trip</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Online Service for Visitor</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex-fill">
-                        <h5><i class="icofont-crown"></i>Our Kingdom</h5>
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Contact a state agency</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Search for statewide …</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Access Channel for …</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- POPULAR SERVICES FOR MOBILE -->
-            <div class="md block-flex-tab d-lg-none">
-            
-                <ul class="nav nav-justified" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active text-nowrap" id="tab-1" data-toggle="pill" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true"><i class="icofont-users-alt-3"></i>Citizen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-nowrap" id="tab-2" data-toggle="pill" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false"><i class="icofont-briefcase-2"></i>Business</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-nowrap" id="tab-3" data-toggle="pill" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false"><i class="icofont-travelling"></i>Foreigner</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-nowrap" id="tab-4" data-toggle="pill" href="#tab-content-4" role="tab" aria-controls="tab-content-4" aria-selected="false"><i class="icofont-camera-alt"></i>Visitor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-nowrap" id="tab-5" data-toggle="pill" href="#tab-content-5" role="tab" aria-controls="tab-content-5" aria-selected="false"><i class="icofont-crown"></i>Our Kingdom</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Register to vote </a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Claim your property</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Locate your tax refund</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
+        <div class="container-fluid">
+            <!-- SEARCH AREA -->
+            <section class="form-search without-slideshow">
+                <form action="search.html" method="POST" class="col-md-8 mx-auto">
+                    <div class="input-field input-group">
+                        <input type="search" class="text-field form-control" placeholder="ស្វែងរកគ្រប់វិស័យ" />
+                        <div class="input-group-append">
+                            <button type="submit" class="submit-field btn"><span class="d-none d-md-inline">ស្វែងរក</span> <i class="icofont-search"></i></button>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Start your business</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Obtain your license</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Online Service </a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
+                </form>
+            </section>
+            <section class="block-service">
+
+                <header class="block-heading text-center">
+                    <h4>
+                        <a href="service-list.html">
+                            ព័ត៌មានសេវា
+                        </a>
+                    </h4>
+                </header>
+                <!-- POPULAR SERVICES -->
+                <div class="row space-y-6 text-center blog-services">
+                    <div class="col-4 col-xs-2 col-sm-4 col-md-2">
+                        <img src="./assets/images/content/family-icon.png" alt="">
+                        <h6 class="sub-title-servic-top mt-3">
+                            <a href="#">ប្រជាពលរដ្ឋ</a>
+                        </h6>
+                        <div class="descri-servic-top">
+                            ព័ត៌មាននិងនីតិវិធីនៃការស្នើសុំសេវានីត្យានុកូលដ្ឋាន
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">New to Cambodia</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Working in Cambodia</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Providing a Feedback</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <img src="./assets/images/content/legal-meter-icon.png" alt="">
+                        <h6 class="sub-title-servic-top mt-3">
+                            <a href="#">អាជីវកម្ម</a>
+                        </h6>
+                        <div class="descri-servic-top">
+                            ព័ត៌មាននិងនីតិវិធីនៃការស្នើសុំសេវានីត្យានុកូលដ្ឋាន
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Things to do in Cambodia</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Plan your trip</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Online Service for Visitor</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <img src="./assets/images/content/imigration-icon.png" alt="">
+                        <h6 class="sub-title-servic-top mt-3">
+                            <a href="#">អ្នកទេសចរណ៍</a>
+                        </h6>
+                        <div class="descri-servic-top">
+                            ព័ត៌មាននិងនីតិវិធីនៃការស្នើសុំសេវានីត្យានុកូលដ្ឋាន
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
-                        <ul>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Contact a state agency</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Search for statewide …</a><i class="icofont-arrow-right"></i>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <a href="service-list.html">Access Channel for …</a><i class="icofont-arrow-right"></i>
-                            </li>
-                        </ul>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <img src="./assets/images/content/imigration-icon.png" alt="">
+                        <h6 class="sub-title-servic-top mt-3">
+                            <a href="#">ជនបរទេស</a>
+                        </h6>
+                        <div class="descri-servic-top">
+                            ព័ត៌មាននិងនីតិវិធីនៃការស្នើសុំសេវានីត្យានុកូលដ្ឋាន
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <img src="./assets/images/content/legal-meter-icon.png" alt="">
+                        <h6 class="sub-title-servic-top mt-3">
+                            <a href="#">ព័ត៌មានមន្ទីរ-អង្គភាព</a>
+                        </h6>
+                        <div class="descri-servic-top">
+                            ព័ត៌មាននិងនីតិវិធីនៃការស្នើសុំសេវានីត្យានុកូលដ្ឋាន
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <img src="./assets/images/content/intellectual-icon.png">
+                        <h6 class="sub-title-servic-top mt-3">
+                            <a href="#">គម្រោងអភិវឌ្ឍន៍</a>
+                        </h6>
+                        <div class="descri-servic-top">
+                            ព័ត៌មាននិងនីតិវិធីនៃការស្នើសុំសេវានីត្យានុកូលដ្ឋាន
+                        </div>
+                    </div>
+    
+                </div>
+
+            </section>
+
+            <section class="block-province">
+                <div class="row">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <header class="block-heading">
+                            <h4>
+                                អភិបាលខេត្ត
+                            </h4>
+                        </header>
+                        <div class="card-province">
+                            <div class="row">
+                                <div class="col-md-5 col-lg-auto mb-5 mb-lg-0">
+                                    <img src="assets/images/leader.png" alt="Responsive image">    
+                                </div>
+                                <div class="col-md col-lg-8">
+                                    <h6 class="card-title"><a href="#">មតិស្វាគមន៍របស់ឯកឧត្តមអភិបាលខេត្តសៀមរាប</a></h6>
+                                    <p class="card-text">ខេត្តសៀមរាប សូមស្វាគមន៍លោក-លោកស្រី ប្រជាពលរដ្ឋ និងប្រិយមិត្តអ្នកអាន
+                                        ទាំងអស់ជាទីរាប់អាន គេហទំព័រ ដែលសាលាខេត្តសៀមរាបបានបង្កើតឡើងនេះគឺក្នុង
+                                        គោលបំណងបង្ហាញអំពីទិន្ន័យ...
+                                                        
+                                    <a href="#" class="btn-link "><u>ចូលអាន</u> <i class="icofont-rounded-right"></i></a>          
+                                </div>
+                                
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="col-md-6">
+                        <header class="block-heading">
+                            <h4>
+                                ទាក់ទងរដ្ឋបាលខេត្ត
+                            </h4>
+                        </header>
+                        <div class="banner-province text-center p-3 p-md-5">
+                            <h5 class="text-white mt-5 mb-4">ចង់ផ្ដល់មតិយោបល់ សំណូមពរ ឬ មានសំណួរផ្សេងៗ 
+                                <br class="d-none d-md-block">សូមទាក់ទងមកកាន់រដ្ឋបាលខេត្ត</h5>
+                            <a href="#" class="btn btn-light w-25 rounded-pill mb-3">ទាក់ទង</a>
+                        </div>                 
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+        <!-- block activities and event -->
+        <section class="block-news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="block-heading">
+                            <h6>ព្រឹត្តិការណ៍ និងសកម្មភាពផ្សេងៗ</h6>
+                        </div>
+                        <div class="slide-event" data-slick='{"adaptiveHeight": false, "mobileFirst": true, "pauseOnDotsHover": true, "dots": false, "autoplay": false, "autoplaySpeed": 3000, "arrows": true, "cssEase": "ease-in-out"}'>
+
+                            <div class="item-event">
+                                <div class="link-event mb-3">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ក្រុមការងាររាជរដ្ឋាភិបាល ចុះមូលដ្ឋានខេត្តសៀមរាប បានប្រជុំបូកសរុបលទ្ធផល...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event mb-3">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            សម្តេចតេជោ ហ៊ុន សែន បានបានបានសម្រេចកញ្ចប់ថវិកា ១៥០ លានដុល្លារកសាងផ្លូវ៣៨...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event mb-3">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ខេត្តសៀមរាបនឹងរៀបចំកម្មវិធីកំសាន្តតាមតាមតាមបែបប្រពៃណី សាសនា ពិព័រណ៍ ជិះកង់...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ក្រុមការងាររាជរដ្ឋាភិបាល ចុះមូលដ្ឋានខេត្តខេត្តខេត្តសៀមរាប បានប្រជុំបូកសរុបលទ្ធផល...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            កូនឈើប្រណីតនិងឈើផ្កាព្រៃចំនួន៤០០ដើមដើម ត្រូវបានដាំក្នុងបរិវេណប្រាសាទអង្គរ...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-event">
+                                <div class="link-event mb-3">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ក្រុមការងាររាជរដ្ឋាភិបាល ចុះមូលដ្ឋានខេត្តសៀមរាប បានប្រជុំបូកសរុបលទ្ធផល...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event mb-3">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ក្រុមការងាររាជរដ្ឋាភិបាល ចុះមូលដ្ឋានខេត្តសៀមរាប បានប្រជុំបូកសរុបលទ្ធផល...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event mb-3">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ក្រុមការងាររាជរដ្ឋាភិបាល ចុះមូលដ្ឋានខេត្តសៀមរាប បានប្រជុំបូកសរុបលទ្ធផល...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-event">
+                                    <img src="assets/images/right-arrow.svg" height="19px" class="mr-2 mt-1">
+                                    <div class="text-link">
+                                        <a href="#">
+                                            ក្រុមការងាររាជរដ្ឋាភិបាល ចុះមូលដ្ឋានខេត្តសៀមរាប បានប្រជុំបូកសរុបលទ្ធផល...
+                                        </a>
+                                        <div class="publish-date">
+                                            ថ្ងៃទី05 ខែឧសភា ឆ្នាំ2019 <span class="author mx-2">ដោយ អ្នកនិពន្ធ &nbsp;&nbsp;(1.2K)</span> ទស្សនា
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="block-heading">
+                            <h6>សេចក្តីជូនដំណឹង</h6>
+                        </div>
+                        <div class="slide-news mb-5">
+                            
+                            <div class="b-item-wrap">
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title"><a href="https://www.battambang.gov.kh/detail/11995">
+                                            រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title"><a href="https://www.battambang.gov.kh/detail/11995">
+                                            រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title">
+                                            <a href="#">
+                                                រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-item-wrap">
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title"><a href="https://www.battambang.gov.kh/detail/11995">
+                                            រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title"><a href="https://www.battambang.gov.kh/detail/11995">
+                                            រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title">
+                                            <a href="#">
+                                                រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-item-wrap">
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title"><a href="https://www.battambang.gov.kh/detail/11995">
+                                            រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title"><a href="https://www.battambang.gov.kh/detail/11995">
+                                            រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <div class="b-date-wrap">
+                                        <div class="b-date primary-background-color">
+                                            <div class="day">27</div>
+                                            <div class="month">ខែ​កក្កដា</div>
+                                            <div class="year">2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="b-title-wrap">
+                                        <div class="b-title">
+                                            <a href="#">
+                                                រដ្ឋបាលខេត្តសូមជូនដំណឹងស្ដីពីការបញ្ចៀសចរាចរជាបណ្ដោះអាសន្នក្នុងឱកាសរៀបចំកម្មវិធី ៉៉‌‌៉៉៉៉​ សម្រាកសៀមរាប នៅក្នុងក្រុង...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                          
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- TOPICS HEADER-->
-        <header class="block-heading text-center">
-            <h4>
-                <a href="service-list.html">
-                    TOPICS
-                </a>
-            </h4>
-        </header>
-        <!-- TOPICS BODY -->
+        </section>
+
         <div class="container-fluid">
-            <div class="block-topic">
-                <table class="table table-bordered">
-                    <tr>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/health-icon.png" alt="Health">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Health</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/legal-meter-icon.png" alt="Legal Matters">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Legal Matters</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/education-icon.png" alt="Transportation">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Transportation</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/transport-icon.png" alt="Education">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Education</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/imigration-icon.png" alt="Immigration">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Immigration</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/family-icon.png" alt="Intellectual Property">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Intellectual Property</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/register-icon.png" alt="Family and Children">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Family and Children</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/intellectual-icon.png" alt="Legal Matters">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Legal Matters</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/legal-meter-icon.png" alt="Registering a Business">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Registering a Business</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/obtaining-icon.png" alt="Obtaining Electricity">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Obtaining Electricity</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/import-icon.png" alt="Import & Export">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Import & Export</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <figure class="d-lg-flex">
-                                    <a href="service-list.html">
-                                        <img src="./assets/images/content/public-icon.png" alt="Public Procurement">
-                                    </a>
-                                    <figcaption>
-                                        <a href="service-list.html">
-                                            <h5>Public Procurement</h5>
-                                        </a>
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                    </tr>           
-                </table>    
-            </div>
-        </div>
-        <!-- PRIME MINISTER MESSAGE HEADER -->
-        <header class="block-heading text-center">
-            <h4>
-                PRIME MINISTER MESSAGE
-            </h4>
-        </header>
-        <!-- PRIME MINISTER MESSAGE BODY -->
-        <div class="container-fluid">
-            <div class="block-list" data-id="block-list-01">
-                <article class="wrap-item">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="thumbnail">
-                                <figure class="m-0 aspectratio-sm-16-9 aspectratio-4-3">
-                                    <img class="d-none" src="./assets/images/content/samdech.jpg" alt="Samdech Hunsen Priminister" />
-                                    <div class="img" style="background-image: url(./assets/images/content/samdech.jpg);"></div>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <h5 class="title d-none">
-                                <a href="#">This is title</a>
-                            </h5>
-                            <div class="excerpt">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                            </div>
-                            <div class="meta d-md-none">
-                                <a href="#">
-                                    Read More <i class="icofont-double-right"></i>
-                                </a>
-                            </div>
-                        </div>
+            <!-- information area -->
+            <section class="info-tab">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-3">
+                        <header class="block-heading">
+                            <h4>  
+                                ប្រជាពលរដ្ឋ
+                            </h4>
+                        </header>
+                        <table class="table border">
+                            <tbody>
+                                <tr>
+                                    <td>លេខប៉ូលីស</td>
+                                    <td>117</td>
+                                </tr>
+                                <tr>
+                                    <td>លេខអគ្គីភ័យ</td>
+                                    <td>666</td>
+                                </tr>
+                                <tr>
+                                    <td>លេខសង្រ្គោះ</td>
+                                    <td>119</td>
+                                </tr>
+                                <tr>
+                                    <td>លេខសង្រ្គោះ</td>
+                                    <td>119</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </article>
-            </div>
-            <style type="text/css">
-            /*Extra small devices (portrait phones, less than 576px)*/
-            @media (max-width: 767.98px) {
-                .block-list[data-id=block-list-01] .wrap-item { padding: 15px; background-color: #F5F6FA; margin-bottom: 15px; }
-                .block-list[data-id=block-list-01] .wrap-item .thumbnail { margin-bottom: 10px; }
-                .block-list[data-id=block-list-01] .wrap-item .title{ margin-bottom: 10px; font-size: 18px; }
-                .block-list[data-id=block-list-01] .wrap-item .excerpt{ margin-bottom: 10px; font-size: 16px; }
-                .block-list[data-id=block-list-01] .wrap-item .meta{ margin-bottom: 0px; font-size: 14px; }
-            }
-            
-            /*Medium devices (tablets, 768px and up)*/
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                .block-list[data-id=block-list-01] .wrap-item { padding: 15px; background-color: #F5F6FA; margin-bottom: 15px; }
-                .block-list[data-id=block-list-01] .wrap-item .thumbnail { margin-bottom: 10px; }
-                .block-list[data-id=block-list-01] .wrap-item .title{ margin-bottom: 10px; font-size: 18px; }
-                .block-list[data-id=block-list-01] .wrap-item .excerpt{ margin-bottom: 10px; font-size: 16px; }
-                .block-list[data-id=block-list-01] .wrap-item .meta{ margin-bottom: 0px; font-size: 14px; }
-            }
-            
-            /*Large devices (desktops, 992px and up)*/
-            @media (min-width: 992px) {
-                .block-list[data-id=block-list-01] .wrap-item { padding: 20px; background-color: #F5F6FA; margin-bottom: 30px; }
-                .block-list[data-id=block-list-01] .wrap-item .thumbnail { margin-bottom: 0px; }
-                .block-list[data-id=block-list-01] .wrap-item .title{ margin-bottom: 15px; font-size: 18px; }
-                .block-list[data-id=block-list-01] .wrap-item .excerpt{ margin-bottom: 15px; font-size: 18px; }
-                .block-list[data-id=block-list-01] .wrap-item .meta{ margin-bottom: 15px; font-size: 14px; }
-            }
-            
-            </style>
-        </div>
-        <!-- EXPLORE CAMBODIA HEADER -->
-        <header class="block-heading text-center">
-            <h4>
-                <a class="" href="visitor-list.html">
-                   EXPLORE CAMBODIA
-                </a>
-            </h4>
-        </header>
-        <!-- EXPLORE CAMBODIA BODY -->
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
-            <div class="grid-item w-100 w-md-33 w-sm-50">
-                <figure>
-                    <div class="aspectratio-sm-2-3 aspectratio-4-3">
-                        <div class="img" style="background-image: url(./assets/images/content/masonry-1.jpg);"></div>
+                    <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <header class="block-heading">
+                            <h4>  
+                                អត្រាប្តូរប្រាក់
+                            </h4>
+                        </header>
+                        <table class="table">
+                            <tbody class="border">
+                                <tr>
+                                    <td>លេខប៉ូលីស</td>
+                                    <td>=</td>
+                                    <td>117</td>
+                                </tr>
+                                <tr>
+                                    <td>លេខអគ្គីភ័យ</td>
+                                    <td>=</td>
+                                    <td>666</td>
+                                </tr>
+                                <tr>
+                                    <td>លេខសង្រ្គោះ</td>
+                                    <td>=</td>
+                                    <td>119</td>
+                                </tr>
+                                <tr>
+                                    <td>លេខសង្រ្គោះ</td>
+                                    <td>=</td>
+                                    <td>119</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
                     </div>
-                    <figcaption><a href="visitor-detail.html">ANCIENT TEMPLES</a></figcaption>
-                </figure>   
-            </div>
-            <div class="grid-item w-100 w-md-33 w-sm-50">
-                <figure>
-                    <div class="aspectratio-4-3">
-                        <div class="img" style="background-image: url(./assets/images/content/masonry-3.jpg);"></div>
+                    <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <header class="block-heading">
+                            <h4>  
+                                តារាងទីផ្សារ
+                            </h4>
+                        </header>
+                        <table class="table border">
+                            <tbody>
+                                <tr>
+                                    <td>ប្រេងសាំង SUKIMEK</td>
+                                    <td>3,750</td>
+                                </tr>
+                                <tr>
+                                    <td>ប្រេងម៉ាស៊ូត SUKIMEX</td>
+                                    <td>3,550</td>
+                                </tr>
+                                <tr>
+                                    <td>ប្រេងសាំង SUKIMEK</td>
+                                    <td>3,750</td>
+                                </tr>
+                                <tr>
+                                    <td>ប្រេងម៉ាស៊ូត SUKIMEX</td>
+                                    <td>3,550</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <figcaption><a href="visitor-detail.html">FRUIT</a></figcaption>
-                </figure>   
-            </div>
-            <div class="grid-item w-100 w-md-33 w-sm-50">
-                <figure>
-                    <div class="aspectratio-4-3">
-                        <div class="img" style="background-image: url(./assets/images/content/masonry-2.jpg);"></div>
-                    </div>
-                    <figcaption><a href="visitor-detail.html">NATURE</a></figcaption>
-                </figure>   
-            </div>
-            <div class="grid-item w-100 w-md-33 w-sm-50">
-                <figure>
-                    <div class="aspectratio-4-3">
-                        <div class="img" style="background-image: url(./assets/images/content/masonry-4.jpg);"></div>
-                    </div>
-                    <figcaption><a href="visitor-detail.html">CULTURAL & MUSEUMS</a></figcaption>
-                </figure>   
-            </div>
-            <div class="grid-item w-100 w-md-33 w-sm-50">
-                <figure>
-                    <div class="aspectratio-4-3">
-                        <div class="img" style="background-image: url(./assets/images/content/masonry-5.jpg);"></div>
-                    </div>
-                    <figcaption><a href="visitor-detail.html">DELICIOUS KHMER CUISINE</a></figcaption>
-                </figure>   
-            </div>
+                </div>
+            </section>
         </div>
     
     </main>
     <footer>
-        <div id="servay" class="servay" data='{"type":"post", "id":168, "auth": "c4ca4238a0b923820dcc509a6f75849b"}'>
-            <div id="servay-useful" class="useful">
-                <ul >
-                    <li>
-                        Is this page useful?
-                    </li>
-                    <li>
-                        <a onclick="servay.useful(1)" href="javascript:void(0);">Yes</a>
-                    </li>
-                    <li>
-                        <a onclick="servay.useful(0)" href="javascript:void(0);">No</a>
-                    </li>  
-                </ul>
-            </div>
-
-            <div id="servay-submit" class="container submit py-3">
-                <form>
-                    <label for="servay-feedback">Tell us what we can do to improve the article</label>
-                    <textarea class="form-control mb-3 rounded-0" id="servay-feedback" placeholder=""></textarea>
-                    <button onclick="servay.submit(this.previousElementSibling.value)" type="button" class="btn btn-light rounded-0">Submit</button>
-                </form>
-            </div>
-
-            <div id="servay-thank" class="container thank">
-                <div class="alert fade show m-0" role="alert">
-                    <strong>Thanks!</strong> Your feedback will help us improve the support experience.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="feedback d-none d-sm-block">
-            <div class="dialog-action">
-                <button class="btn btn-sm btn-primary rounded-0" data-toggle="modal" data-target="#feedback-modal-center">Site Feedback</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="feedback-modal-center" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-center-title" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <img src="./assets/images/fav-32.png" class="mr-2" alt="">
-                            <h5 class="modal-title" id="feedback-modal-center-title">The Kingdom of Cambodia</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body feedback-body">
-                            <form id="feedback-form" action="" method="GET">
-                                <div class="">
-                                    <article id="article-1" class="active">
-                                        <h5>How satisfied are you with the Cambodia Support website?</h5>
-                                        <input type="range" step="1" value="0" name="star-rating" id="star-rating" />
-                                        <div class="star text-center" data-reference="star-rating" data-star="5" data-font="&#9733;"></div>
-                                        <div class="d-flex justify-content-around mb-6" for="feedback-range"><small>Very Dissatisfied</small><small>Very Satisfied</small></div>
-                                        <div class="text-center mb-3">
-                                            <a onClick="feedback.tabCheckStar(this)" href="javascript:void(0)" data-current="article-1" data-next="article-2" class="btn btn-primary px-3">OK</a>
-                                            <div class="invalid-feedback">Please provide a valid star.</div>
-                                        </div>
-                                        <small>Step 1 of 3</small>
-                                    </article>
-                                    <article id="article-2" class="hide">
-                                        <h5>Is there anything we can do to improve? Let us know!</h5>
-                                        <textarea name="textarea" class="form-control mb-6" id="exampleFormControlTextarea1" rows="3" maxlength="1000" placeholder="Type your feedback here (1000 chars max)"></textarea>
-                                        <div class="text-center mb-3">
-                                            <a onClick="feedback.tabUncheck(this)" href="javascript:void(0)" data-textarea="exampleFormControlTextarea1" data-current="article-2" data-next="article-3" class="btn btn-primary px-3">OK</a>
-                                        </div>
-                                        <small>Step 2 of 3</small>
-                                    </article>
-                                    <article id="article-3" class="hide">
-                                        <h5>Did you find the information you were looking for?</h5>
-                                        <div class="d-flex justify-content-around mb-6 w-50 mx-auto">
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" id="information_radio_stacked-1" name="information_radio_stacked">
-                                                <label class="custom-control-label" for="information_radio_stacked-1">YES</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" id="information_radio_stacked-2" name="information_radio_stacked">
-                                                <label class="custom-control-label" for="information_radio_stacked-2">NO</label>
-                                            </div>
-                                        </div>
-                                        <div class="text-center mb-3">
-                                            <button onClick="feedback.submit(this)" href="javascript:void(0)" data-validation='{"type":"require","input_name":"information_radio_stacked"}' data-current="article-3" data-next="article-4" type="button" class="btn btn-primary px-3">SUBMIT</button>
-                                            <div class="invalid-feedback">Please provide a valid information.</div>
-                                        </div>
-                                        <small>Step 3 of 3</small>
-                                    </article>
-                                    <article id="article-4" class="hide">
-                                        <p class="text-center">
-                                            Thanks for taking this survey. Your participation is helpful to us and we take your feedback seriously.
-                                        </p>
-                                        <div class="text-center mb-3">
-                                            <button data-dismiss="modal" type="button" class="btn btn-secondary px-3">close</button>
-                                        </div>
-                                    </article>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <div class="container-fluid">
             <nav class="d-md-flex justify-content-between"> 
                 <ul class="d-flex justify-content-center social">
-                    <li>Follow Us</li>
                     <li>
-                        <a href="#"><i class="icofont-facebook"></i></a>
+                        <a href="#"><img src="assets/images/facebook.svg" height="30px"></a>
                     </li>
                     <li>
-                        <a href="#"><i class="icofont-youtube-play"></i></a>
+                        <a href="#"><img src="assets/images/youtube.svg" height="30px"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/telegram.svg" height="30px"></a>
                     </li>
                 </ul>
                 <ul class="d-flex justify-content-center footer-nabar">
                     <li>
-                        <a href="contact-us.html">CONTACT US</a>
+                        <a href="contact-us.html">ទំនាក់ទំនង</a>
                     </li>
                     <li>
-                        <a href="about-us.html">ABOUT US</a>
+                        <a href="about-us.html">អំពីវេបសាយ</a>
                     </li>
                     <li>
-                        <a href="privacy-policy.html">PRIVACY POLICY</a>
+                        <a href="privacy-policy.html">គោលការណ៍</a>
                     </li>
                     <li>
-                        <a href="term-of-use.html">TERM OF USE</a>
+                        <a href="term-of-use.html">ល័ក្ខខណ្ឌ</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="container-fluid text-center">
-            <small class="copyright">&copy; Copyright 2019 Government of Cambodia | All Rights Reserved.</small>
+            <small class="copyright">&copy; ២០២០ រក្សាសិទ្ធិដោយ៖ រាជរដ្ឋាភិបាលនៃព្រះរាជាណាចក្រកម្ពុជា</small>
         </div>
     </footer>
     <div class="scroll-to-top">
