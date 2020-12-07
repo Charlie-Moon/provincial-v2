@@ -25,7 +25,7 @@
 @font-face {
     font-family:'Koh-Santepheap-Body';
     src:url(../fonts/Koh-Santepheap-Body.eot);
-    src:local('☺'),url(../fonts/Koh-Santepheap-Body.woff) format('woff'),url(../fonts/Koh-Santepheap-Body.svg) format('svg');
+    src:local('☺'),url(../fonts/Koh-Santepheap-Body.woff) format('woff'),url(../fonts/Koh-Santepheap-Body.ttf) format('truetype'),url(../fonts/Koh-Santepheap-Body.svg) format('svg');
     font-weight:400;
     font-style:normal
 }
@@ -42,31 +42,5 @@
     font-family:'Moul';
     src:url(../fonts/Moul-Regular.ttf);
     font-weight:300;
-    font-style:normal
-}
-@font-face {
-    font-family:'Metal';
-    src:url(../fonts/KhmerOSMetalchrieng.ttf);
-    font-weight:300;
-    font-style:normal
-}
-@font-face {
-    font-family:'Battambang';
-    src:url(../fonts/kh_Battambang.ttf);
-    font-weight:300;
-    font-style:normal
-}
-
-// Font Content
-@font-face {
-    font-family:'Content';
-    src:url(../fonts/content/Content-Regular.ttf);
-    font-weight:300;
-    font-style:normal
-}
-@font-face {
-    font-family:'Content-bold';
-    src:url(../fonts/content/Content-Bold.ttf);
-    font-weight:700;
     font-style:normal
 }

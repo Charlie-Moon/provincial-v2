@@ -16,4 +16,21 @@
          font-size: 18px;
       }
    }
+   .b-item-wrap {
+      .b-title, .b-cat {
+         padding-left: 20px;
+         position: relative;
+         margin-bottom: 15px;
+         &::before {
+            content: "\eaa0";
+            font-family: 'IcoFont';
+            position: absolute;
+            left: 0;
+         }
+      }
+      .b-cat:before {
+         content: "\ef71";
+         font-size: 14px;
+      }
+   }
 }

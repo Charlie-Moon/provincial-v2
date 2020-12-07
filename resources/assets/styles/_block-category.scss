@@ -1,0 +1,28 @@
+.block-category {
+   .b-item-wrap {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+      .b-thumbnail-wrap {
+         margin-bottom: 30px;
+      }
+      .b-title {
+         display: block;
+         font-size: 16px;
+         color: #353535;
+         line-height: 28px;
+         word-wrap: break-word;
+      }
+      .b-excerpt {
+         font-size: 13px;
+         color: #828282;
+         margin-bottom: 15px;
+      }
+      .b-meta {
+         font-size: 13px;
+         color: #828282;
+         border-top: 1px solid #eee;
+         padding-top: 15px;
+         margin-bottom: 30px;
+      }
+   }
+}
